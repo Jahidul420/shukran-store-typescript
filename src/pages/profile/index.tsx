@@ -179,7 +179,7 @@ const EditProfile = () => {
             <button>
               <FaHeart />
             </button>
-            <button>
+            <button onClick={toggleMap}>
               <AiFillPlusCircle />
             </button>
           </div>

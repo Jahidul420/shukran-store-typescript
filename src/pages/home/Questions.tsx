@@ -5,7 +5,7 @@ type Props = {};
 
 const Questions = (props: Props) => {
   return (
-    <div className={`text-white bg-[#43283A] w-full h-auto py-40`}>
+    <div className={`text-black bg-white w-full h-auto py-40`}>
       <div className=" w-[50%] mx-auto text-[100px] font-austin text-center">
         <h1 className=" leading-none">ALL YOU NEED TO KNOW</h1>
       </div>
@@ -23,7 +23,7 @@ const Questions = (props: Props) => {
           }}
         >
           <SplideSlide>
-            <div className="border border-white w-[380px] p-14 text-center">
+            <div className=" border border-black w-[380px] p-14 text-center">
               <p className="text-sm font-semibold">QUESTION NO 01</p>
               <h2 className="text-2xl text-semibold font-austin py-2">
                 What is Chinigura Rice
@@ -36,7 +36,7 @@ const Questions = (props: Props) => {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="border h-auto mb-1 w-[380px] p-14 text-center">
+            <div className="border-black border h-auto mb-1 w-[380px] p-14 text-center">
               <p className="text-sm font-semibold">QUESTION NO 02</p>
               <h2 className="text-2xl text-semibold font-austin py-2">
                 What is Chinigura Rice
@@ -49,7 +49,7 @@ const Questions = (props: Props) => {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="border h-auto w-[380px] p-14 text-center">
+            <div className="border-black border h-auto w-[380px] p-14 text-center">
               <p className="text-sm font-semibold">QUESTION NO 03</p>
               <h2 className="text-2xl text-semibold font-austin py-2">
                 What is Chinigura Rice
@@ -62,7 +62,7 @@ const Questions = (props: Props) => {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="border h-auto w-[380px] p-14 text-center">
+            <div className="border-black border h-auto w-[380px] p-14 text-center">
               <p className="text-sm font-semibold">QUESTION NO 04</p>
               <h2 className="text-2xl text-semibold font-austin py-2">
                 What is Chinigura Rice
@@ -75,7 +75,7 @@ const Questions = (props: Props) => {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="border h-auto w-[380px] p-14 text-center">
+            <div className="border-black border h-auto w-[380px] p-14 text-center">
               <p className="text-sm font-semibold">QUESTION NO 05</p>
               <h2 className="text-2xl text-semibold font-austin py-2">
                 What is Chinigura Rice

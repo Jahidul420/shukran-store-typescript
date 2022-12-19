@@ -128,8 +128,8 @@ const CheckoutProducts = (props: { products: Products }) => {
 
 const CustomerInfo = () => {
   return (
-    <div className=" w-2/6 h-full bg-white">
-      <div className=" bg-black text-white ml-2 rounded-xl p-8 relative h-full flex flex-col justify-between">
+    <div className=" w-2/6 h-full">
+      <div className=" bg-gray-100 text-black ml-2 rounded-xl p-8 relative h-full flex flex-col justify-between">
         <div className=" mt-5 text-sm space-y-5">
           <h1 className=" text-2xl font-semibold border-b-2 ">Info</h1>
           <p>Payment methood</p>
@@ -149,7 +149,7 @@ const CustomerInfo = () => {
         <div className="space-y-8">
           <Cupon />
           <PriceSection />
-          <button className=" bg-sky-400 w-[92%] py-3 rounded-3xl">
+          <button className=" bg-sky-400 w-full py-3 rounded-3xl">
             Place Order
           </button>
         </div>

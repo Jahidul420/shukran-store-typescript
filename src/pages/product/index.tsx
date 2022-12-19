@@ -81,9 +81,9 @@ const index = () => {
           </div>
         </div>
       </div>
-      <div className="h-screen w-full sticky bg-white/30 backdrop-blur-sm border-t">
+      {/* <div className="h-screen w-full sticky bg-white/30 backdrop-blur-sm border-t">
         <h2>Hello world i amd from another worl</h2>
-      </div>
+      </div> */}
     </motion.div>
   );
 };

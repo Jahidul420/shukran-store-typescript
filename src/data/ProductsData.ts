@@ -1,7 +1,7 @@
-import chinigura from "../assets/png/chinigura.png";
-import dchinigura from "../assets/png/dChinigura.png";
-import katari from "../assets/png/katari.png";
-import najirshail from "../assets/png/najirshail.png";
+import chinigura from "../assets/opt/products/chinigura.png";
+import dchinigura from "../assets/opt/products/dChinigura.png";
+import katari from "../assets/opt/products/katari.png";
+import najirshail from "../assets/opt/products/najirshail.png";
 import { Product } from "../typs/plan";
 
 const productsArr: Product[] = [

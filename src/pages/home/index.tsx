@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
-import { useDispatch, useSelector } from "react-redux";
 import Footer from "../../components/Footer";
 import Nav from "../../components/Nav";
-import { increment, selectCounter } from "../../slices/counterSlice";
 import HomeBanner from "./HomeBanner";
 import HomeMap from "./HomeMap";
 import HomeProducts from "./HomeProducts";
@@ -11,8 +9,8 @@ import PartnarShip from "./PartnarShip";
 import PopularProducts from "./PopularProducts";
 import Questions from "./Questions";
 export default function Home() {
-  const counter= useSelector(selectCounter)
-    const dispatch= useDispatch()
+  // const counter= useSelector(selectCounter)
+  //   const dispatch= useDispatch()
  console.log("rendered")
   return (
     <motion.div
@@ -20,7 +18,7 @@ export default function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <button className="py-2 px-5 bg-black text-white rounded-lg m-40"
+      {/* <button className="py-2 px-5 bg-black text-white rounded-lg m-40"
         onClick={()=>dispatch(increment())}
       >
         increment: {counter.value}
@@ -30,7 +28,7 @@ export default function Home() {
         // onClick={()=>dispatch(decrement())}
       >
         de: {counter.pc}
-      </button>
+      </button> */}
       <Nav />
       <HomeBanner />
       <PopularProducts />

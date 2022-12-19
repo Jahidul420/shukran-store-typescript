@@ -1,4 +1,4 @@
-import mapBg from "../../assets/worldmap.jpg";
+import mapBg from "../../assets/map.jpeg";
 type Props = {}
 
 const HomeMap = (props: Props) => {

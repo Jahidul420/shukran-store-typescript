@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { BsArrowLeft, BsArrowRight, BsTwitter } from "react-icons/bs";
+import { BsArrowLeft, BsTwitter } from "react-icons/bs";
 import { FaFacebookF, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
@@ -32,8 +32,8 @@ const index = () => {
               className="z-50 w-36 h-10 bg-white absolute top-0 right-0 text-black flex justify-center items-center gap-3 text-xl"
               onClick={handleLogin}
             >
+              <BsArrowLeft />
               <span className="text-sm font-medium">Go Back</span>
-              <BsArrowRight />
             </Link>
           ) : (
             <Link

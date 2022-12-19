@@ -11,7 +11,7 @@ const HomeProducts = (props: Props) => {
   const [products, setProducts] = useState(productsArr);
 
   return (
-    <div className={`bg-[#43283A] text-white px-14 py-32 h-auto w-full`}>
+    <div className={`bg-white text-black px-14 py-32 h-auto w-full`}>
       <div className="w-[55%] m-auto text-center text-5xl font-austin space-y-5">
         <h2>MEET THE SHUKRAN GREAT PRODUCTS</h2>
         <p className="font-roboto text-sm">
@@ -52,12 +52,12 @@ const HomeProducts = (props: Props) => {
                 <div className="flex items-center gap-5 font-roboto text-sm">
                   <Link
                     to="/product"
-                    className={`border-2 bg-white text-black border-white rounded-full px-8 py-[10px] hover:scale-110 duration-300`}
+                    className={`border-2 bg-black text-white border-white rounded-full px-8 py-[10px] hover:scale-110 duration-300`}
                   >
                     View Product
                   </Link>
                   <button
-                    className={` border-2 bg-transprent text-white border-white rounded-full px-8 py-[10px] hover:scale-110 duration-300 `}
+                    className={` border-2 bg-transprent text-black border-black rounded-full px-8 py-[10px] hover:scale-110 duration-300 `}
                   >
                     ADD TO CART
                   </button>
@@ -78,10 +78,10 @@ const ProductImage = (props: { image: String }) => {
   return (
     <div className=" w-[60%]">
       <div
-        className={` p-5 h-[630px] w-[620px] bg-[#381F30] rounded-full  relative group mx-auto`}
+        className={` p-5 h-[630px] w-[620px] bg-gray-200 rounded-full  relative group mx-auto`}
       >
         <div
-          className={`duration-300 group-hover:scale-105 h-full w-full  rounded-full bg-[#381F30] absolute top-0 left-0 transition-all`}
+          className={`duration-300 group-hover:scale-105 h-full w-full  rounded-full bg-gray-200 absolute top-0 left-0 transition-all`}
         ></div>
         <img
           src={`${image}`}
@@ -126,7 +126,7 @@ const Skus = (props: { product: Product }) => {
         {product.SKUs.map((item, index) => (
           <button
             className={`py-[2px] px-2 border rounded-full ${
-              item.active ? "bg-white text-black border-white" : ""
+              item.active ? "bg-black text-white border-black" : ""
             } duration-500`}
             key={index}
           >

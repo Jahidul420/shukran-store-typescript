@@ -1,3 +1,9 @@
+@import url("https://queengarnet.com/fonts/austin-light-web.woff2");
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Oswald:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,7 +26,3 @@ body {
 }
 
 
-#wow{
-  word-wrap: break-word;
-  white-space: pre-wrap;
-}
