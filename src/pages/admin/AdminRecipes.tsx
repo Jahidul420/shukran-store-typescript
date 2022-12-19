@@ -42,31 +42,32 @@ export default AdminRecipes;
 const RecipeCard = (props: { recipe: Recipe }) => {
   const { recipe } = props;
   return (
-    <div className="w-full flex items-center gap-2">
-      <div className="h-40 w-1/6 overflow-hidden group">
+    <div className="w-full h-72 flex items-center gap-8 bg-[#fafafa] drop-shadow-md">
+      <div className="h-full w-[20%] overflow-hidden group rounded-md">
         <img
           src={`${recipe.image}`}
           alt=""
-          className="h-full w-5/6 object-cover group-hover:scale-110 duration-300 rounded-md"
+          className="h-full w-full object-covser group-hover:scale-110 duration-300 rounded-md "
         />
       </div>
 
-      <div className=" text-left w-3/6 mx-auto font-austin space-y-3">
-        {/* <input
-          type="text"
-          className="text-sm w-full text-center bg-transparent p-2 border-black border"
-          value={recipeName}
-          onChange={(e) => setRecipeName(e.target.value)}
-        /> */}
+      <div className=" text-left w-[80%] mx-auto font-austin ">
         <h2 className="text-3xl">{recipe.name}</h2>
-        <p className="cutoffText">Instructions</p>
-        <p className="cutoffText">{recipe.discription}</p>
-        <p className="text ">ingredients</p>
-        <ul className=" list-disc space-y-2 text-left cutoffText">
-          {recipe?.ingredients?.map((item: String, index: Number) => (
-            <li key={index + ""}>{item}</li>
-          ))}
-        </ul>
+        <div className="flex items-end gap-8">
+          <div className="w-3/6">
+            <p className="cutoffText">Instructions</p>
+            <p className="recipytextCut">{recipe.discription}</p>
+          </div>
+
+          <div className="w-3/6">
+            <p className="text ">ingredients</p>
+            <ul className=" list-disc space-y-2 text-left recipytextCut">
+              {recipe?.ingredients?.map((item: String, index: Number) => (
+                <li key={index + ""}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
